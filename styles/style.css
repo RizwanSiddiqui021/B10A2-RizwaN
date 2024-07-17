@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/miama');
                 
-/* font-family: 'Miama', sans-serif; */
-
 *{
     margin: 0;
     padding: 0;
@@ -14,18 +12,41 @@
 :root{
     --primary-color: rgba(230, 83, 60, 1);
     --white: rgba(255, 255, 255, 1);
+    --white2: rgba(255, 255, 255, 0.5);
+}
+
+/* shared styles */
+
+.primary-button{
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 42px;
+    background-color: var(--primary-color);
+}
+
+.secondary-button{
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 16px 40px;
+    border: 1px solid var(--white);
+    border-radius: 42px;
+    background-color: transparent;
 }
 
 /* hero-section styles */
 
 .hero-section{
     max-width: 1440px;
-    height: 715px;
     margin: 0 auto;
     padding-top: 45px;
     background: radial-gradient(circle, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1));
-    /* background: linear-gradient(to top right, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1)); */
 }
+
+/* nav-bar styles */
 
 .nav-bar{
     display: flex;
@@ -73,6 +94,111 @@
     font-size: 1.5rem;
 }
 
+/* hero-contents styles */
+
+.hero-contents{
+    max-width: 1460px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.hero-texts{
+    width: 600px;
+}
+
+.hero-title{
+    color: var(--white);
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 80px;
+    margin-bottom: 28px;
+}
+
+#shape{
+    color: var(--white);
+    font-size: 7rem;
+    font-weight: 400;
+    font-family: 'Miama', sans-serif;
+    line-height: 0.1;
+}
+
+.hero-description{
+    color: var(--white2);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.hero-image{
+    position: relative;
+}
+
+.hero-image>img{
+    width: 100%;
+}
+
+.subtext1{
+    width: 190px;
+    height: 100px;
+    border: 1px	solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    bottom: 65px;
+    right: 260px;  
+}
+
+.subtext1>img{
+    width: 30px;
+    height: 30px;
+}
+
+.subtext-texts>h2{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.subtext-texts>p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.subtext2{
+    width: 190px;
+    height: 100px;
+    border: 1px	solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 125px;
+    left: 230px;   
+}
+
+.subtext2>div>h2{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.subtext2>div>p{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
 /* styles for mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -92,4 +218,15 @@
     #bars{
         display: inline;
     }
+
+    /* .hero-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .hero-texts{
+        width: 100%;
+    } */
+    
+    
 }
