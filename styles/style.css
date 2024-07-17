@@ -4,5 +4,72 @@
 /* font-family: 'Miama', sans-serif; */
 
 *{
+    margin: 0;
+    padding: 0;
     font-family: "Inter", sans-serif;
+}
+
+/* my-variables */
+
+:root{
+    --primary-color: rgba(230, 83, 60, 1);
+    --white: rgba(255, 255, 255, 1);
+}
+
+/* hero-section styles */
+
+.hero-section{
+    max-width: 1440px;
+    height: 715px;
+    margin: 0 auto;
+    padding-top: 45px;
+    background-color: rgba(17, 17, 17, 1.00);
+    
+}
+
+.nav-bar{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-title{
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 2.25rem;
+    font-weight: 800;     
+}
+
+.nav-links{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.nav-link{
+    border: none;
+    border-radius: 46px;
+    padding: 8px 20px;
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-decoration: none;  
+}
+
+.nav-link:hover{
+    background-color: var(--primary-color);
+}
+
+#home{
+    background-color: var(--primary-color);
+}
+
+#bars{
+    display: none;
 }
