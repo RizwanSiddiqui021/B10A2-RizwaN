@@ -377,7 +377,7 @@
 
     .hero-buttons{
         justify-content: space-between;
-        gap: 10px;
+        gap: 8px;
     }
 
     #shape{
@@ -385,7 +385,7 @@
     }
 
     .hero-buttons>button{
-        width: 260px;
+        width: 250px;
         height: 55px;
         font-size: 1.1rem;
         padding: 18px 25px;
@@ -474,7 +474,7 @@
     }
 
     .extra-mile-btn{
-        width: 285px;
+        width: 100%;
         height: 55px;
     }
 
