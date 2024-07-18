@@ -13,6 +13,7 @@
     --primary-color: rgba(230, 83, 60, 1);
     --white: rgba(255, 255, 255, 1);
     --white2: rgba(255, 255, 255, 0.5);
+    --black: rgba(0, 0, 0, 1);
 }
 
 /* shared styles */
@@ -40,7 +41,7 @@
 /* hero-section styles */
 
 .hero-section{
-    max-width: 1460px;
+    max-width: 1440px;
     margin: 0 auto;
     padding-top: 45px;
     background: radial-gradient(circle, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1));
@@ -97,7 +98,7 @@
 /* hero-contents styles */
 
 .hero-contents{
-    max-width: 1460px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -203,6 +204,71 @@
     font-weight: 400;
 }
 
+/* your-habits-section styles */
+
+.your-habits-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px ;
+    background-color: var(--black);
+}
+
+.your-habits-texts{
+    width: 670px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.your-habits-title{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.your-habits-description{
+    color: var(--white2);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.your-habits-images{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.your-habits-img{
+    width: 230px;
+    text-align: center;
+}
+
+.your-habits-img>img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+
+}
+
+.your-habits-img>h3{
+    color: var(--white);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.your-habits-img>p{
+    color: var(--white2);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+
+
+
 /* styles for mobile devices */
 
 @media screen and (max-width: 576px) {
@@ -290,5 +356,26 @@
         font-size: 0.625rem;
     }
 
+    /* your-habits-section styles for mobile device */
+
+    .your-habits-section{
+        padding: 0;
+    }
     
+    .your-habits-texts{
+        max-width: 100%;
+    }
+
+    .your-habits-title{
+        font-size: 2rem;
+    }
+
+    .your-habits-description{
+        padding: 0 40px;
+    }
+    
+    .your-habits-images{
+        flex-direction: column;
+        gap: 50px;
+    }   
 }
