@@ -570,6 +570,85 @@ select option{
     font-weight: 400;   
 }
 
+/* special-offer-section style */
+
+.special-offer-texts{
+    max-width: 670px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.special-offer-title{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.special-offer-description{
+    color: var(--white2);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.special-offer-contents{
+    background: radial-gradient(circle, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1));
+    
+    max-width: 1060px;
+    margin: 0 auto;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.special-offer-subtexts{
+    color: var(--white);
+    text-align: center;
+}
+
+.special-offer-subtexts>h5{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.special-offer-subtexts>p{
+    color: var(--white2);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+#body{
+    color: var(--primary-color);
+}
+
+#deal{
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.special-offer-image{
+    position: relative;
+}
+
+.offer-tag{
+    position: absolute;
+    top: 60px;
+    left: 220px;
+}
+
+.offer-tag>img{
+    width: 130px;
+}
+
 /* styles for mobile devices */
 
 @media screen and (max-width: 576px) {
