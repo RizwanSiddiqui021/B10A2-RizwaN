@@ -48,7 +48,7 @@
     margin: 0 auto;
     padding-top: 45px;
     /* background: radial-gradient(circle, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1)); */
-    background: linear-gradient(to bottom, rgba(50, 50, 50, 1), rgba(17, 17, 17, 1));
+    background: linear-gradient(to bottom, rgba(50, 50, 50, 1), rgba(14, 14, 14, 1));
 }
 
 /* nav-bar styles */
@@ -280,7 +280,7 @@ main{
 .extra-mile-section{
     max-width: 1440px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .extra-mile-contents{
@@ -332,26 +332,6 @@ main{
     border-radius: 18px;
 }
 
-/* trainings-and-exercises-section styles */
-
-.trainings-and-exercises-section{
-    max-width: 1060px;
-    margin: 0 auto;
-}
-
-.trainings-and-exercises-title{
-    color: var(--white);
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 14px;
-}
-
-.trainings-and-exercises-description{
-    color: var(--white2);
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
 /* BMI-calculator-section styles */
 
 .BMI-calculator-section{
@@ -372,7 +352,8 @@ main{
 
 .BMI-calculator-texts{
     max-width: 670px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    text-align: center; 
 }
 
 .BMI-calculator-section-title{
@@ -387,7 +368,7 @@ main{
     color: var(--white2);
     font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .calculator-title{
@@ -524,7 +505,7 @@ select option{
     color: var(--white2);
     font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .team-photo-gallery{
@@ -572,6 +553,10 @@ select option{
 
 /* special-offer-section style */
 
+.special-offer-section{
+    padding-bottom: 80px;
+}
+
 .special-offer-texts{
     max-width: 670px;
     margin: 0 auto;
@@ -590,7 +575,7 @@ select option{
     color: var(--white2);
     font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .special-offer-contents{
@@ -646,6 +631,75 @@ select option{
 
 .offer-tag>img{
     width: 130px;
+}
+
+/* footer styles */
+
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom,rgb(10, 10, 10, 1), rgba(50, 50, 50, 1) );
+}
+
+.footer-contents{
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-coloumn1>h3{
+    color: var(--primary-color);
+    font-size: 4.375rem;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.footer-coloumn1>p{
+    color: var(--white2);
+    font-size: 0.875rem;
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.footer-coloumn2>h4, .footer-coloumn3>h4{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.footer-coloumn2>a, .footer-coloumn3>a{
+    color: var(--white2);
+    font-size: 1.2rem;
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+.footer-foot{
+
+}
+
+.line{
+    border: 1px	solid rgba(255, 255, 255, 0.1);
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.footer-foot>p{
+    margin-top: 35px;
+    color: var(--white2);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 35px;
 }
 
 /* styles for mobile devices */
@@ -746,7 +800,7 @@ select option{
     /* your-habits-section styles for mobile device */
 
     .your-habits-section{
-        padding: 0;
+        padding-top: 60px;
         padding-bottom: 65px;
     }
     
@@ -771,6 +825,7 @@ select option{
 
     .extra-mile-section{
         padding: 0 30px;
+        margin-bottom: 50px;
     }
 
     .extra-mile-contents{
@@ -813,7 +868,11 @@ select option{
     /* BMI-calculator-section styles for mobile devices */
     
     .BMI-calculator-texts{
-        margin-left: 20px;
+        padding: 0 20px;
+    }
+
+    .BMI-calculator-section-title{
+        font-size: 2rem;
     }
 
     .BMI-calculator-section-description{
@@ -827,12 +886,21 @@ select option{
     }
 
     .calculator-title{
+        font-size: 1.2rem;
         margin-bottom: 25px;
+    }
+
+    .calculator-chart> table{
+        width: 310px;
     }
     
     .calculate{
         padding: 0;
         padding-right: 20px;
+    }
+
+    .calculate-title{
+        font-size: 1.4rem;
     }
 
     .calculate-description{
@@ -868,6 +936,14 @@ select option{
         padding: 0 20px;
     }
 
+    .our-team-texts{
+        margin-top: 60px;
+    }
+
+    .our-team-title{
+        font-size: 2rem;
+    }
+
     .our-team-description{
         margin-bottom: 30px;
     }
@@ -885,9 +961,51 @@ select option{
     .special-offer-contents{
         flex-direction: column-reverse;
         gap: 20px;
+        padding-bottom: 30px;
+        margin: 0 20px;
     }
 
-    .special-offer-texts{
-        padding: 0 20px;
+    .special-offer-title{
+        font-size: 2rem;
     }
+
+
+    .special-offer-texts{
+        margin-top: 60px;
+        padding: 0 20px;
+    }    
+
+    /* footer styles for mobile devices */
+    .footer-contents{
+        padding-left: 20px;
+        padding-top: 35px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-coloumn1>p{
+        color: var(--white2);
+        font-size: 0.7rem;
+        font-weight: 400;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .footer-coloumn2>h4, .footer-coloumn3>h4{
+        margin-bottom: 20px;
+    }
+    
+    .footer-coloumn2>a, .footer-coloumn3>a{
+        margin-bottom: 20px;
+    }
+
+    .line{
+        margin: 0 20px;
+    }
+    .footer-foot>p{
+        text-align: left;
+        padding-left: 20px;
+    }
+
 }
