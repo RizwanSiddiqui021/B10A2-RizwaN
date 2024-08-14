@@ -396,10 +396,6 @@ main{
     margin-bottom: 50px;
 }
 
-.calculator-chart{
-
-}
-
 .calculator-chart> table{
     table-layout: fixed;
     max-width: 310px;
@@ -428,6 +424,7 @@ main{
 }
 
 .calculate{
+    padding: 0 10px;
 }
 
 .calculate-title{
@@ -755,6 +752,10 @@ select option{
         margin-bottom: 25px;
     }
     
+    .calculate{
+        padding: 0;
+        padding-right: 20px;
+    }
 
     .calculate-description{
         max-width: 300px;
