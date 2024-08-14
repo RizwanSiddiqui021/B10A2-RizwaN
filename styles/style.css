@@ -219,8 +219,8 @@ main{
 .your-habits-section{
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .your-habits-texts{
@@ -575,7 +575,7 @@ select option{
     color: var(--white2);
     font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .special-offer-contents{
