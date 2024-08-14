@@ -507,6 +507,72 @@ select option{
     width: 225px;
 }
 
+/* our-team-section styles */
+
+.our-team-texts{
+    max-width: 670px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.our-team-title{
+    color: var(--white);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+.our-team-description{
+    color: var(--white2);
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.team-photo-gallery{
+    max-width: 1060px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px 0;
+}
+
+.row-1, .row-2{
+    display: grid;
+    grid-template-columns: repeat(3, 326px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.row-2{
+    margin-top: 18px;
+}
+
+.trainer-card{
+    color: white;
+    position: relative;
+}
+
+.trainer-name{
+    position: absolute;
+    top: 210px;
+    left: 20px;
+    z-index: 1;
+}
+
+.trainer-name>h5{
+    font-size: 1.25rem;
+    font-weight: 900;
+}
+
+.trainer-name>p{
+    color: rgba(255, 255, 255, 0.8);
+    font-size:  0.9rem;
+    font-weight: 400;   
+}
+
 /* styles for mobile devices */
 
 @media screen and (max-width: 576px) {
