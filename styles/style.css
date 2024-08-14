@@ -595,7 +595,6 @@ select option{
 
 .special-offer-contents{
     background: radial-gradient(circle, rgba(46, 46, 46, 1), rgba(17, 17, 17, 1));
-    
     max-width: 1060px;
     margin: 0 auto;
     border-radius: 18px;
@@ -863,7 +862,7 @@ select option{
         margin-bottom: 34px;
     }
 
-    /* our-team-section styles */
+    /* our-team-section styles for mobile devices */
 
     .our-team-section{
         padding: 0 20px;
@@ -879,5 +878,16 @@ select option{
     
     .row-2{
         margin-top: 18px;
+    }
+
+    /* special-offer-section styles for mobile devices */
+
+    .special-offer-contents{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .special-offer-texts{
+        padding: 0 20px;
     }
 }
