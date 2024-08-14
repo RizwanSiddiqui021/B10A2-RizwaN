@@ -782,4 +782,22 @@ select option{
         padding-left: 12px;
         margin-bottom: 34px;
     }
+
+    /* our-team-section styles */
+
+    .our-team-section{
+        padding: 0 20px;
+    }
+
+    .our-team-description{
+        margin-bottom: 30px;
+    }
+    
+    .row-1, .row-2{
+        grid-template-columns: repeat(1, 326px);
+    }
+    
+    .row-2{
+        margin-top: 18px;
+    }
 }
