@@ -387,7 +387,7 @@ main{
     color: var(--white2);
     font-size: 0.875rem;
     font-weight: 400;
-    margin-bottom: 88px;
+    margin-bottom: 80px;
 }
 
 .calculator-title{
@@ -432,7 +432,7 @@ main{
 
 .calculate-title{
     font-size: 33px;
-    font-weight: 650;
+    font-weight: 700;
     margin-bottom: 14px;
 }
 
@@ -490,6 +490,11 @@ main{
     font-weight: 400;
 }
 
+select option{
+    color: black;
+    background-color: var(--primary-color);
+}
+
 .cal-button{
     background-color: var(--primary-color);
     border: none;
@@ -500,11 +505,6 @@ main{
     font-weight: 600;
     text-align: center;
     width: 225px;
-}
-
-select option{
-    color: black;
-    background-color: var(--primary-color);
 }
 
 /* styles for mobile devices */
@@ -667,5 +667,53 @@ select option{
         top: 20px;
         right: 70px;
         transform: scale(2);
+    }
+
+    /* BMI-calculator-section styles for mobile devices */
+    
+    .BMI-calculator-texts{
+        margin-left: 20px;
+    }
+
+    .BMI-calculator-section-description{
+        margin-bottom: 32px;
+    }
+
+    .BMI-calculator-contents{
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .calculator-title{
+        margin-bottom: 25px;
+    }
+    
+
+    .calculate-description{
+        max-width: 300px;
+        color: var(--white2);
+        font-size: 0.875rem;
+        font-weight: 400;
+        margin-bottom: 34px;
+    }
+
+    .height-weight, .age-sex{
+        display: flex;
+        gap: 12px;
+    }
+    
+    .height-weight>div>input, .age-sex>div>input{
+        width: 176px;
+    }
+      
+    #sex{
+        width: 188px;
+    }
+    
+    #factor{
+        width: 388px;
+        padding-left: 12px;
+        margin-bottom: 34px;
     }
 }
